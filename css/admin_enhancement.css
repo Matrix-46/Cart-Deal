@@ -1,0 +1,420 @@
+/* ============================================
+   PROFESSIONAL ADMIN PANEL REDESIGN
+   Clean, modern, and well-formatted
+   ============================================ */
+
+/* Reset and improve base styles */
+body {
+    background: #f8f9fa !important;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* === MODERN RED/DARK HEADER === */
+.header {
+    background: linear-gradient(135deg, #d90429 0%, #8d021b 100%) !important;
+    padding: 1.5rem 2rem !important;
+    box-shadow: 0 4px 15px rgba(217, 4, 41, 0.15) !important;
+    border: none !important;
+}
+
+.header .flex {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header .flex .logo {
+    color: white !important;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px;
+}
+
+.header .flex .logo span {
+    color: #ffd1d1 !important;
+}
+
+/* Navigation links */
+.header .flex .navbar a {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 1.6rem !important;
+    font-weight: 500 !important;
+    padding: 0.8rem 1.5rem !important;
+    border-radius: 0.8rem !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+.header .flex .navbar a:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-1px);
+    text-decoration: none !important;
+}
+
+/* Special highlight for Manage Admins */
+.header .flex .navbar a[href*="manage_admins"] {
+    background: linear-gradient(135deg, rgba(217, 4, 41, 0.1), rgba(43, 45, 66, 0.1)) !important;
+    border: 1px solid rgba(217, 4, 41, 0.2) !important;
+}
+
+/* Header icons */
+.header .flex .icons div {
+    color: white !important;
+    font-size: 2.2rem !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 0.8rem !important;
+    border-radius: 0.8rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.header .flex .icons div:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.05);
+}
+
+/* === CLEAN SECTIONS === */
+section {
+    padding: 3rem 2rem !important;
+    max-width: 1400px;
+    margin: 0 auto !important;
+}
+
+/* === MODERN PAGE HEADINGS === */
+.heading {
+    font-size: 3.5rem !important;
+    font-weight: 800 !important;
+    color: #1f2937 !important;
+    margin-bottom: 3rem !important;
+    text-align: center !important;
+    padding: 0 !important;
+    background: none !important;
+    text-shadow: none !important;
+}
+
+/* === BEAUTIFUL DASHBOARD CARDS === */
+.dashboard .box-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 2.5rem !important;
+}
+
+.dashboard .box-container .box {
+    background: white !important;
+    padding: 3rem 2.5rem !important;
+    border-radius: 1.6rem !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #d90429, #2b2d42);
+}
+
+.dashboard .box-container .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(217, 4, 41, 0.12) !important;
+    border-color: #d90429 !important;
+}
+
+.dashboard .box-container .box h3 {
+    font-size: 4rem !important;
+    font-weight: 800 !important;
+    color: #d90429 !important;
+    margin-bottom: 1rem !important;
+    line-height: 1 !important;
+}
+
+.dashboard .box-container .box h3 span {
+    font-size: 2rem !important;
+    color: #6b7280 !important;
+    font-weight: 500 !important;
+}
+
+.dashboard .box-container .box p {
+    font-size: 1.6rem !important;
+    color: #6b7280 !important;
+    background: #f9fafb !important;
+    padding: 1.2rem !important;
+    border-radius: 0.8rem !important;
+    margin: 1.5rem 0 !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+}
+
+.dashboard .box-container .box .btn {
+    width: 100% !important;
+    background: linear-gradient(135deg, #d90429, #2b2d42) !important;
+    color: white !important;
+    border: none !important;
+    padding: 1.2rem !important;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.8rem !important;
+    margin-top: 1.5rem !important;
+}
+
+.dashboard .box-container .box .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(217, 4, 41, 0.25) !important;
+}
+
+/* === CLEAN CARD GRIDS === */
+.show-products .box-container,
+.accounts .box-container,
+.orders .box-container,
+.contacts .box-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    gap: 2.5rem !important;
+    justify-content: center !important;
+}
+
+.show-products .box-container .box,
+.accounts .box-container .box,
+.orders .box-container .box,
+.contacts .box-container .box {
+    background: white !important;
+    padding: 2.5rem !important;
+    border-radius: 1.6rem !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.show-products .box-container .box:hover,
+.accounts .box-container .box:hover,
+.orders .box-container .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(217, 4, 41, 0.08) !important;
+    border-color: #d90429 !important;
+}
+
+/* === MODERN BUTTONS === */
+.btn {
+    background: linear-gradient(135deg, #d90429, #8d021b) !important;
+    color: white !important;
+    border: none !important;
+    padding: 1.2rem 2.5rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.8rem !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 12px rgba(217, 4, 41, 0.2) !important;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(217, 4, 41, 0.3) !important;
+}
+
+.option-btn {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+    color: white !important;
+    border: none !important;
+    padding: 1.2rem 2.5rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.8rem !important;
+}
+
+.delete-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+    color: white !important;
+    border: none !important;
+    padding: 1.2rem 2.5rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.8rem !important;
+}
+
+.flex-btn {
+    display: flex !important;
+    gap: 1.5rem !important;
+}
+
+/* === CLEAN FORMS === */
+.form-container form,
+.add-products form,
+.update-product form {
+    background: white !important;
+    padding: 3.5rem !important;
+    border-radius: 1.6rem !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+.form-container form h3,
+.add-products form h3,
+.update-product form h3 {
+    font-size: 2.8rem !important;
+    font-weight: 700 !important;
+    color: #1f2937 !important;
+    margin-bottom: 2.5rem !important;
+    text-align: center !important;
+}
+
+.form-container form .box,
+.add-products form .box,
+.update-product form .box {
+    width: 100% !important;
+    padding: 1.4rem 1.8rem !important;
+    font-size: 1.6rem !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 0.8rem !important;
+    background: white !important;
+    color: #1f2937 !important;
+    transition: all 0.2s ease !important;
+    margin: 1.2rem 0 !important;
+}
+
+.form-container form .box:focus,
+.add-products form .box:focus,
+.update-product form .box:focus {
+    border-color: #d90429 !important;
+    box-shadow: 0 0 0 3px rgba(217, 4, 41, 0.1) !important;
+    outline: none !important;
+}
+
+/* === PRODUCT CARDS === */
+.show-products .box-container .box img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.show-products .box-container .box .name {
+    font-size: 1.9rem !important;
+    font-weight: 700 !important;
+    color: #1f2937 !important;
+    margin: 1rem 0 !important;
+}
+
+.show-products .box-container .box .price {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    color: #d90429 !important;
+    margin: 0.8rem 0 !important;
+}
+
+.show-products .box-container .box .details {
+    font-size: 1.5rem !important;
+    color: #6b7280 !important;
+    line-height: 1.6 !important;
+}
+
+/* === ACCOUNT/ORDER CARDS === */
+.accounts .box-container .box p,
+.orders .box-container .box p,
+.contacts .box-container .box p {
+    font-size: 1.7rem !important;
+    color: #4b5563 !important;
+    margin: 1rem 0 !important;
+    line-height: 1.6 !important;
+}
+
+.accounts .box-container .box p span,
+.orders .box-container .box p span,
+.contacts .box-container .box p span {
+    color: #d90429 !important;
+    font-weight: 600 !important;
+}
+
+/* Status badges */
+span[style*="background: gold"],
+span[style*="background: #4facfe"] {
+    display: inline-block !important;
+    padding: 0.6rem 1.4rem !important;
+    border-radius: 2rem !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    margin: 0.5rem 0 !important;
+}
+
+/* === MESSAGES === */
+.message {
+    background: white !important;
+    border-left: 4px solid #d90429 !important;
+    padding: 1.8rem 2.5rem !important;
+    border-radius: 0.8rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    margin-bottom: 2rem !important;
+}
+
+.message span {
+    font-size: 1.8rem !important;
+    color: #1f2937 !important;
+}
+
+/* === EMPTY STATE === */
+.empty {
+    background: #f9fafb !important;
+    border: 2px dashed #d1d5db !important;
+    padding: 4rem !important;
+    text-align: center !important;
+    border-radius: 1.6rem !important;
+    color: #6b7280 !important;
+    font-size: 2rem !important;
+    margin: 0 auto !important;
+    max-width: 60rem !important;
+    grid-column: 1 / -1 !important;
+}
+
+/* === PROFILE DROPDOWN === */
+.header .flex .profile {
+    background: white !important;
+    border-radius: 1.2rem !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+    padding: 2rem !important;
+    border: none !important;
+}
+
+.header .flex .profile p {
+    font-size: 1.8rem !important;
+    color: #1f2937 !important;
+    font-weight: 600 !important;
+    margin: 0.5rem 0 !important;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 991px) {
+    html {
+        font-size: 55% !important;
+    }
+
+    .dashboard .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1.5rem !important;
+    }
+
+    .show-products .box-container,
+    .accounts .box-container,
+    .orders .box-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .header .flex .navbar {
+        background: white !important;
+    }
+
+    .header .flex .navbar a {
+        color: #1f2937 !important;
+        margin: 0.5rem 2rem !important;
+    }
+}
