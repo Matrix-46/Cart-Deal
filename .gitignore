@@ -1,0 +1,19 @@
+# Database Configuration
+components/config.php
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# XAMPP/Local environment items
+error_log
+php_errors.log
+
+# Uploaded content (usually not synced to GitHub)
+uploaded_img/*
+!uploaded_img/.gitkeep
+
+# Project Backups or temporary images
+project images/
+*.tmp
+*.bak
