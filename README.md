@@ -1,4 +1,4 @@
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](http://cart-deal.wuaze.com/home.php)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](http://cart-deal.gt.tc/home.php)
 [![Security: Hardened](https://img.shields.io/badge/Security-Hardened-green.svg)](#security-features)
 [![UI: Premium Red-Black](https://img.shields.io/badge/UI-Red--Black--White-d90429.svg)](#design-philosophy)
 
@@ -7,7 +7,7 @@
 ---
 
 ## 🔗 Live Demo
-Access the live version of the project here: [**cart-deal.wuaze.com**](http://cart-deal.wuaze.com/home.php)
+Access the live version of the project here: [**cart-deal.gt.tc**](http://cart-deal.gt.tc/home.php)
 
 ## 📸 Project Gallery
 
